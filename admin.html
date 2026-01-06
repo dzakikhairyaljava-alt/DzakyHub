@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body class="admin" style="background-color: #2FBF71;">
+
+    <div id="admin">
+      <h2>Data Recap</h2>
+
+      <div class="btn-group">
+        <button onclick="tampil('infaq')" class="yo">Infaq</button>
+        <button onclick="tampil('zakat')" class="yo">Zakat</button>
+        <button onclick="tampil('wakaf')" class="yo">Wakaf</button>
+      </div>
+
+      <div class="btn-group">
+        <button onclick="rekap('hari')" class="yo">Per Hari</button>
+        <button onclick="rekap('minggu')" class="yo">Per Minggu</button>
+        <button onclick="rekap('bulan')" class="yo">Per Bulan</button>
+      </div>
+
+      <h3 id="total" style="color: white;"></h3>
+
+        <table>
+          <tr>
+            <th>Nama</th>
+            <th>Jumlah</th>
+            <th>Tanggal</th>
+          </tr>
+          <tbody id="data"></tbody>
+        </table>
+      </div>
+
+  </body>
+</html>
