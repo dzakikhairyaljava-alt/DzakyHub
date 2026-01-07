@@ -6,6 +6,21 @@
   border-radius: 8px;
 }
 
+h1 {
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 0px;
+  font-family: 'Amiri', serif;
+  font-size: 45px;
+  color: #FFF9C4 ;
+}
+
+header h1 {
+  font-family: 'Amiri', serif;
+  padding-top: 25px;
+  font-size: 55px;
+}
+
 div {
   background: white;
   padding: 20px;
@@ -20,24 +35,6 @@ div {
   background-color: #c0392b;;
 }
 
-input, select, button {
-  width: 100%;
-  padding: 10px 12px;
-  margin-top: 10px;
-  box-sizing: border-box;
-}
-
-label {
-  display: block;
-  margin-top: 10px;
-}
-
-button {
-  background: green;
-  color: white;
-  border: none;
-}
-
 .btn-group {
   display: flex;
   gap: 8px;        
@@ -50,10 +47,22 @@ button {
   flex: 1;
 }
 
-header h1 {
-  font-family: 'Amiri', serif;
-  padding-top: 25px;
-  font-size: 55px;
+button {
+  background: green;
+  color: white;
+  border: none;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 10px;
+  box-sizing: border-box;
 }
 
 table {
@@ -69,10 +78,14 @@ td, th {
   text-align: center;
 }
 
+.io th {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
 #user {
   max-width: 900px;
   margin: auto;
-  background: #9BCB7A;
+  background: #2D6A4F;
   padding: 20px;
   border-radius: 10px;
   display: block;
@@ -89,15 +102,6 @@ td, th {
   border-radius: 10px;
   margin-top: 53px;
   background: #2F9B6A;
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 5px;
-  margin-top: 0px;
-  font-family: 'Amiri', serif;
-  font-size: 45px;
-  color: #FFF9C4 ;
 }
 
 #admin h2 {
@@ -143,15 +147,6 @@ h1 {
   letter-spacing: 2px;
 }
 
-.w {
-  background: linear-gradient(to top,#3A6B4E,#8FBAA3);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-top: 0px;
-  margin-bottom: 29px;
-}
-
 .cuy::after {
   content: "";
   position: absolute;
@@ -164,6 +159,12 @@ h1 {
   border-radius: 2px;
 }
 
-.io th {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+.w {
+  background: linear-gradient(to top,#3A6B4E,#8FBAA3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 0px;
+  margin-bottom: 29px;
+  justify-items: center;
 }

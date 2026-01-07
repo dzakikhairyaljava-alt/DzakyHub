@@ -13,18 +13,16 @@ function login() {
 function simpan() {
   const nama = document.getElementById("nama").value;
   const jenis = document.getElementById("jenis").value;
-
   let jumlah = document.getElementById("jumlah").value;
   jumlah = jumlah.replace(/\./g, "");
   jumlah = parseInt(jumlah);
 
   if (!nama || !jumlah) {
-    alert("Di isi dengan Lengkap");
+    alert("Lengkapi");
     return;
   }
 
   let data = JSON.parse(localStorage.getItem(jenis)) || [];
-
   data.unshift({
     nama: nama,
     jumlah: jumlah,
@@ -43,12 +41,10 @@ function tampil(jenis) {
   let data = JSON.parse(localStorage.getItem(jenis)) || [];
   let tbody = document.getElementById("data");
   let total = 0;
-
   tbody.innerHTML = "";
 
   for (let i = 0; i < data.length; i++) {
     total += data[i].jumlah;
-
     tbody.innerHTML += `
       <tr>
         <td>${data[i].nama}</td>
@@ -62,7 +58,6 @@ function tampil(jenis) {
       </tr>
     `;
   }
-
   document.getElementById("total").innerText ="Total Uang: Rp " + rupiah(total);
 }
 
