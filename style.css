@@ -81,6 +81,23 @@ td, th {
 .io th {
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
+button.active {
+  background-color: #3a8765
+
+ ;
+}
+.btn-simpan {
+  background-color: #6FAF8E;
+  border-radius: 100px;
+  margin-top:17px;
+}
+
+.btn-simpan:hover {
+  background-color: #3F8F6B;
+  transition: 0.2s;
+}
+
+
 
 #user {
   max-width: 900px;

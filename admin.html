@@ -11,15 +11,17 @@
     <div id="admin">
       <h2>Data Recap</h2>
       <div class="btn-group">
-        <button onclick="tampil('infaq')" class="yo">Infaq</button>
-        <button onclick="tampil('zakat')" class="yo">Zakat</button>
-        <button onclick="tampil('wakaf')" class="yo">Wakaf</button>
-      </div>
-      <div class="btn-group">
-        <button onclick="rekap('hari :')" class="yo">Per Hari</button>
-        <button onclick="rekap('minggu :')" class="yo">Per Minggu</button>
-        <button onclick="rekap('bulan :')" class="yo">Per Bulan</button>
-      </div>
+  <button onclick="pilihJenis(this, 'infaq')" class="yo jenis">Infaq</button>
+  <button onclick="pilihJenis(this, 'zakat')" class="yo jenis">Zakat</button>
+  <button onclick="pilihJenis(this, 'wakaf')" class="yo jenis">Wakaf</button>
+</div>
+
+<div class="btn-group">
+  <button onclick="pilihRekap(this, 'hari')" class="yo rekap">Per Hari</button>
+  <button onclick="pilihRekap(this, 'minggu')" class="yo rekap">Per Minggu</button>
+  <button onclick="pilihRekap(this, 'bulan')" class="yo rekap">Per Bulan</button>
+</div>
+
       <h3 id="total" style="color: white;"></h3>
         <table>
           <tr>
