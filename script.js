@@ -30,7 +30,7 @@ function login() {
 }
 
 
-
+toLocaleString(Id-id)
 
 function simpan() {
   const nama = document.getElementById("nama").value.trim();
